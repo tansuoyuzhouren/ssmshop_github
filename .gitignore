@@ -1,0 +1,5 @@
+# 忽略 .war 文件
+*.war
+
+# 或者忽略整个 target 目录
+target/
