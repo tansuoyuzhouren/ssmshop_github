@@ -6,20 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="184eebdf-2f65-43db-8eb7-dbb0b85f5095" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/mapper/ItemOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/mapper/ItemOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/po/ItemOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/po/ItemOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/itemOrder/my.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/itemOrder/my.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/mapper/ItemOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/mapper/ItemOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/po/ItemOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/po/ItemOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.properties" afterDir="false" />
-    </list>
+    <list default="true" id="184eebdf-2f65-43db-8eb7-dbb0b85f5095" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
