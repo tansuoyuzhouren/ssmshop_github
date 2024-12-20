@@ -57,7 +57,7 @@
                                 <c:if test="${data.status==2}">待收货</c:if>
                                 <c:if test="${data.status==3}">已收货</c:if>
                             </div>
-                            <c:forEach items="${data.orderDetails}" var="chil" varStatus="l">
+                            <c:forEach items="${data.details}" var="chil" varStatus="l">
                                 <div style="width: 838px;border-bottom: 1px dashed #ddd;padding-top: 30px;padding-bottom: 30px;" class="hidden_yh center_yh">
                                     <img src="${chil.item.url1}" width="100" height="100" class="left_yh" style="padding-right: 10px">
                                     <div class="left_yh" style="width: 580px;">
@@ -113,7 +113,7 @@
                                 <c:if test="${data.status==2}">待收货</c:if>
                                 <c:if test="${data.status==3}">已收货</c:if>
                             </div>
-                            <c:forEach items="${data.orderDetails}" var="chil" varStatus="l">
+                            <c:forEach items="${data.details}" var="chil" varStatus="l">
                                 <div style="width: 838px;border-bottom: 1px dashed #ddd;padding-top: 30px;padding-bottom: 30px;" class="hidden_yh center_yh">
                                     <img src="${chil.item.url1}" width="100" height="100" class="left_yh" style="padding-right: 10px">
                                     <div class="left_yh" style="width: 580px;">
@@ -170,7 +170,7 @@
                                 <c:if test="${data.status==2}">待收货</c:if>
                                 <c:if test="${data.status==3}">已收货</c:if>
                             </div>
-                            <c:forEach items="${data.orderDetails}" var="chil" varStatus="l">
+                            <c:forEach items="${data.details}" var="chil" varStatus="l">
                                 <div style="width: 838px;border-bottom: 1px dashed #ddd;padding-top: 30px;padding-bottom: 30px;" class="hidden_yh center_yh">
                                     <img src="${chil.item.url1}" width="100" height="100" class="left_yh" style="padding-right: 10px">
                                     <div class="left_yh" style="width: 580px;">
@@ -227,7 +227,7 @@
                                 <c:if test="${data.status==2}">待收货</c:if>
                                 <c:if test="${data.status==3}">已收货</c:if>
                             </div>
-                            <c:forEach items="${data.orderDetails}" var="chil" varStatus="l">
+                            <c:forEach items="${data.details}" var="chil" varStatus="l">
                                 <div style="width: 838px;border-bottom: 1px dashed #ddd;padding-top: 30px;padding-bottom: 30px;" class="hidden_yh center_yh">
                                     <img src="${chil.item.url1}" width="100" height="100" class="left_yh" style="padding-right: 10px">
                                     <div class="left_yh" style="width: 580px;">
@@ -283,7 +283,7 @@
                                 <c:if test="${data.status==2}">待收货</c:if>
                                 <c:if test="${data.status==3}">已收货</c:if>
                             </div>
-                            <c:forEach items="${data.orderDetails}" var="chil" varStatus="l">
+                            <c:forEach items="${data.details}" var="chil" varStatus="l">
                                 <div style="width: 838px;border-bottom: 1px dashed #ddd;padding-top: 30px;padding-bottom: 30px;" class="hidden_yh center_yh">
                                     <img src="${chil.item.url1}" width="100" height="100" class="left_yh" style="padding-right: 10px">
                                     <div class="left_yh" style="width: 580px;">
@@ -343,3 +343,4 @@
 <%@include file="/common/ufooter.jsp"%>
 </body>
 </html>
+

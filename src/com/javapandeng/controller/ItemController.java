@@ -230,7 +230,6 @@ public class ItemController extends BaseController {
         Item item = itemService.load(id);
         model.addAttribute("obj",item);
 
-
         return "item/view";
     }
 }

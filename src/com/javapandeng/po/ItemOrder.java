@@ -39,14 +39,14 @@ public class ItemOrder implements Serializable {
      */
     private Integer status;
 
-    private List<OrderDetail> orderDetails;
+    private List<OrderDetail> details;
 
     public List<OrderDetail> getOrderDetails() {
-        return orderDetails;
+        return details;
     }
 
     public void setOrderDetails(List<OrderDetail> orderDetails) {
-        this.orderDetails = orderDetails;
+        this.details = orderDetails;
     }
 
     public ItemOrder() {
@@ -149,5 +149,13 @@ public class ItemOrder implements Serializable {
                 ", isDelete=" + isDelete +
                 ", status=" + status +
                 '}';
+    }
+
+    public List<OrderDetail> getDetails() {
+        return details;
+    }
+
+    public void setDetails(List<OrderDetail> details) {
+        this.details = details;
     }
 }

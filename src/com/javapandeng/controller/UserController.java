@@ -43,9 +43,8 @@ public class UserController extends BaseController {
     public String view(HttpServletRequest request,Model model){
         Object attribute = request.getSession().getAttribute(Consts.USERID);
 
-
         if (isEmpty(attribute)){
-            return "login/res";
+            return "redirect:login/res";
         }
 
         Integer user_id = Integer.valueOf(attribute.toString());

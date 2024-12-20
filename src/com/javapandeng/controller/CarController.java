@@ -37,18 +37,18 @@ public class CarController {
 
         if (attribute == null){
             js.put(Consts.RES, 0);
-
             return js.toJSONString();
         }
 
+        System.out.println(car);
+
+
         Item item = itemService.load(car.getItemId());
         car.setItem(item);
-
         Integer userId = Integer.valueOf(attribute.toString());
         car.setUserId(userId);
 
         Double price = Double.valueOf(item.getPrice());
-
 
         if (item.getZk() != null){
             price = price * item.getZk() / 10;

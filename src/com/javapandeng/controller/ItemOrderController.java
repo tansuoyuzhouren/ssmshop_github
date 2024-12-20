@@ -66,6 +66,14 @@ public class ItemOrderController extends BaseController {
         //全部订单
         String sql = "select * from item_order where user_id="+userId+" order by id desc";
         List<ItemOrder> all = itemOrderService.listBySqlReturnEntity(sql);
+
+        for (ItemOrder order : all) {
+            System.out.println(order);
+            for (OrderDetail detail : order.getDetails()) {
+                System.out.println(detail);
+            }
+        }
+
         //待发货
         String sql2 = "select * from item_order where user_id="+userId+" and status=0 order by id desc";
         List<ItemOrder> dfh = itemOrderService.listBySqlReturnEntity(sql2);
@@ -85,6 +93,8 @@ public class ItemOrderController extends BaseController {
         model.addAttribute("yqx",yqx);
         model.addAttribute("dsh",dsh);
         model.addAttribute("ysh",ysh);
+
+
         return "itemOrder/my";
     }
 
@@ -113,6 +123,7 @@ public class ItemOrderController extends BaseController {
             Car load = carService.load(c.getId());
             to = to.add(new BigDecimal(load.getPrice()).multiply(new BigDecimal(c.getNum())));
         }
+
         ItemOrder order = new ItemOrder();
         order.setStatus(0);
         order.setCode(getOrderNo());
@@ -120,7 +131,10 @@ public class ItemOrderController extends BaseController {
         order.setTotal(to.setScale(2,BigDecimal.ROUND_HALF_UP).toString());
         order.setUser_id(userId);
         order.setAddTime(new Date());
+
         itemOrderService.insert(order);
+
+
 
         //订单详情放入orderDetail，删除购物车
         if(!CollectionUtils.isEmpty(ids)){
@@ -144,6 +158,8 @@ public class ItemOrderController extends BaseController {
         js.put(Consts.RES,1);
         return js.toJSONString();
     }
+
+
 
     private static String date;
     private static long orderNum = 0L;
@@ -178,6 +194,8 @@ public class ItemOrderController extends BaseController {
     public String fh(Integer id,Model model){
         ItemOrder obj =itemOrderService.load(id);
         obj.setStatus(2);
+
+        System.out.println(obj);
         itemOrderService.updateById(obj);
         model.addAttribute("obj",obj);
         return "redirect:/itemOrder/findBySql";

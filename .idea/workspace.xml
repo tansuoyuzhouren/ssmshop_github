@@ -8,6 +8,17 @@
   <component name="ChangeListManager">
     <list default="true" id="184eebdf-2f65-43db-8eb7-dbb0b85f5095" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/mapper/ItemOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/mapper/ItemOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/po/ItemOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/po/ItemOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/itemOrder/my.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/itemOrder/my.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/mapper/ItemOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/mapper/ItemOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/po/ItemOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/po/ItemOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +103,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebRoot" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15802889" />
@@ -101,10 +112,12 @@
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\src\com\javapandeng\mapper" />
+      <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\WebRoot\WEB-INF\jsp\user" />
+      <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\WebRoot\WEB-INF\jsp\itemCategory" />
       <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\WebRoot\WEB-INF\jsp\login" />
-      <recent name="D:\course\qlkrp\code\testMaven\WebRoot\WEB-INF\jsp\login" />
-      <recent name="D:\course\qlkrp\backup\testMaven\src" />
+      <recent name="D:\Project\KuangShen\suiguostore\shuiguo\WebRoot\resource\ueditor\jsp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.javapandeng.controller" />
@@ -113,12 +126,10 @@
       <recent name="com.javapandeng.po" />
       <recent name="com.javapandeng.mapper" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\src\com\javapandeng\mapper" />
-      <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\WebRoot\WEB-INF\jsp\user" />
-      <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\WebRoot\WEB-INF\jsp\itemCategory" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\WebRoot\WEB-INF\jsp\login" />
-      <recent name="D:\Project\KuangShen\suiguostore\shuiguo\WebRoot\resource\ueditor\jsp" />
+      <recent name="D:\course\qlkrp\code\testMaven\WebRoot\WEB-INF\jsp\login" />
+      <recent name="D:\course\qlkrp\backup\testMaven\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -244,8 +255,10 @@
       <option name="adminPort" value="8005" />
       <option name="allowRunningInParallel" value="false" />
       <option name="contextPath" value="/" />
-      <option name="docBase" value="D:\Project\KuangShen\suiguostore\ssmshop-first\WebRoot\" />
-      <option name="envOptions" />
+      <option name="docBase" value="D:\Project\KuangShen\suiguostore\ssmshop_github\WebRoot" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="moduleName" />
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />

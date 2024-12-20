@@ -15,7 +15,7 @@
         <result property="status" column="url3" jdbcType="INTEGER"/>
     </resultMap>
 
-    <resultMap id="ResultMapItemOrderDao" type="com.javapandeng.po.ItemOrder">
+    <resultMap id="ResultMapItemOrderDto" type="com.javapandeng.po.ItemOrder">
         <result property="id" column="id" jdbcType="INTEGER"/>
         <result property="item_id" column="name" jdbcType="INTEGER"/>
         <result property="user_id" column="price" jdbcType="INTEGER"/>
@@ -25,7 +25,7 @@
         <result property="isDelete" column="url2" jdbcType="INTEGER"/>
         <result property="status" column="url3" jdbcType="INTEGER"/>
         <association property="user" column="user_id" select="com.javapandeng.mapper.UserMapper.load"/>
-        <collection property="orderDetails" column="id" ofType="com.javapandeng.po.OrderDetail" select="com.javapandeng.mapper.OrderDetailMapper.listByOrderId"/>
+        <collection property="details" column="id" ofType="com.javapandeng.po.OrderDetail" select="com.javapandeng.mapper.OrderDetailMapper.listByOrderId"/>
 
     </resultMap>
 
@@ -247,12 +247,12 @@
     </select>
 
     <!--查询列表返回实体-->
-    <select id="listBySqlReturnEntity" resultMap="ResultMapItemOrder">
+    <select id="listBySqlReturnEntity" resultMap="ResultMapItemOrderDto">
         ${sql}
     </select>
 
     <!--查询分页-->
-    <select id="findBySqlReturnEntity" resultMap="ResultMapItemOrder">
+    <select id="findBySqlReturnEntity" resultMap="ResultMapItemOrderDto">
         ${sql}
     </select>
 
