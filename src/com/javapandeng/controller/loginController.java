@@ -1,5 +1,6 @@
 package com.javapandeng.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.javapandeng.base.BaseController;
 import com.javapandeng.po.*;
 import com.javapandeng.service.ItemCategoryService;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
@@ -178,4 +180,44 @@ public class loginController extends BaseController {
         return "redirect:/login/uIndex.action";
     }
 
+    /**
+     * 转向 修改用户信息页面
+     */
+    @RequestMapping("pass")
+    public String pass(Model model,HttpServletRequest request){
+        Object attribute = request.getSession().getAttribute(Consts.USERID);
+        if (isEmpty(attribute)){
+
+            return "login/uLogin";
+        }
+        Integer user_id = Integer.valueOf(attribute.toString());
+
+        User user = userService.load(user_id);
+
+        model.addAttribute("obj",user);
+        return "login/pass";
+    }
+
+    /**
+     * 新增修改功能
+     * @return
+     */
+    @RequestMapping("upass")
+    @ResponseBody
+    public String upass(HttpServletRequest request,String password){
+        JSONObject js = new JSONObject();
+        Object attribute = request.getSession().getAttribute(Consts.USERID);
+        if (isEmpty(attribute)){
+
+            js.put(Consts.RES,0);
+            return js.toJSONString();
+        }
+        Integer user_id = Integer.valueOf(attribute.toString());
+        User user = userService.load(user_id);
+        user.setPassWord(password);
+        userService.updateById(user);
+
+        js.put(Consts.RES,1);
+        return js.toJSONString();
+    }
 }
