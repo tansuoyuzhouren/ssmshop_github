@@ -192,10 +192,9 @@ public class ItemOrderController extends BaseController {
      */
     @RequestMapping("/fh")
     public String fh(Integer id,Model model){
-        ItemOrder obj =itemOrderService.load(id);
-        obj.setStatus(2);
 
-        System.out.println(obj);
+        ItemOrder obj = itemOrderService.load(id);
+        obj.setStatus(2);
         itemOrderService.updateById(obj);
         model.addAttribute("obj",obj);
         return "redirect:/itemOrder/findBySql";

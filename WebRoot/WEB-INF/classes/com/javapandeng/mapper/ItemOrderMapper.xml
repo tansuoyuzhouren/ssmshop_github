@@ -32,12 +32,12 @@
 
     <!--声明数据库字段-->
     <sql id="ItemOrder_field">
-        user_id,code,total,isDelete,status
+        id,user_id,code,addTime,total,isDelete,status
     </sql>
 
     <!--实体类属性-->
     <sql id="ItemOrder_insert">
-        ${user_id},${code},${total},${isDelete},${status}
+        ${id},${user_id},${code},${addTime},${total},${isDelete},${status}
     </sql>
 
     <sql id="ItemOrder_where">

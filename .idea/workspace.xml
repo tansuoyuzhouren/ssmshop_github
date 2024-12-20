@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="184eebdf-2f65-43db-8eb7-dbb0b85f5095" name="Default Changelist" comment="" />
+    <list default="true" id="184eebdf-2f65-43db-8eb7-dbb0b85f5095" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/ItemOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/ItemOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/mapper/ItemOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/mapper/ItemOrderMapper.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
