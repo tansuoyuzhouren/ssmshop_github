@@ -90,6 +90,26 @@ public class NewsController extends BaseController {
         return "redirect:/news/findBySql.action";
     }
 
+    /**
+     * 转向 公告列表页面
+     */
+    @RequestMapping("list")
+    public String list(Model model){
 
+        String sql = "select * from news order by id desc";
+        Pager<News> pagers = newsService.findBySqlReturnEntity(sql);
 
+        model.addAttribute("pagers",pagers);
+        return "news/list";
+    }
+
+    /**
+     * 转向公告详情页面
+     */
+    @RequestMapping("view")
+    public String view(Integer id,Model model){
+        News news = newsService.load(id);
+        model.addAttribute("obj",news);
+        return "news/view";
+    }
 }

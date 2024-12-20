@@ -7,11 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="184eebdf-2f65-43db-8eb7-dbb0b85f5095" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login/pass.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/news/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/news/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/ScController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/ScController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/loginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/loginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/MessageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/NewsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/NewsController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

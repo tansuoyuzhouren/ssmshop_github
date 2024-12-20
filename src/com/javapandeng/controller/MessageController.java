@@ -1,5 +1,6 @@
 package com.javapandeng.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.javapandeng.base.BaseController;
 import com.javapandeng.po.Message;
 import com.javapandeng.service.MessageService;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/message")
@@ -55,5 +57,15 @@ public class MessageController extends BaseController {
         return "message/add";
     }
 
-
+    /**
+     * 新增添加留言功能
+     */
+    @RequestMapping("exAdd")
+    @ResponseBody
+    public String exAdd(Message message){
+        JSONObject js = new JSONObject();
+        messageService.insert(message);
+        js.put("message","期待您的下次留言！！!");
+        return js.toJSONString();
+    }
 }
