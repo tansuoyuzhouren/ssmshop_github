@@ -1,7 +1,5 @@
-<%--这行代码是 JSP（JavaServer Pages）页面的指令，它用于设置页面的一些属性和配置。具体来说，它告诉 JSP 容器如何处理该页面的内容类型、编码等信息。--%>
-<%@ page language="java" contentType="text/html; character= UTF-8" pageEncoding="UTF-8" %>
-<%--jsp页面指令，将其他jsp页面的内容包含到当前jsp页面中--%>
-<%@ include file="/common/taglibs.jsp"%>
+<%@page language="java" contentType="text/html; character=UTF-8" pageEncoding="UTF-8" %>
+<%@include file="/common/taglibs.jsp"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -26,20 +24,18 @@
             </a>
         </div>
     </div>
-
     <div class="leftnav">
         <div class="leftnav-title"><strong><span class="icon-list">菜单列表</span> </strong></div>
-        <h2><span class="icon-user"></span>基本设置</h2>
-        <ul style ="display:block">
-            <li><a href="${ctx}/itemCategory/findBySql" target = "right"><span class="icon-caret-right"></span>类目管理</a></li>
-            <li><a href="${ctx}/user/findBySql" target = "right"><span class="icon-caret-right"></span>用户管理</a></li>
-            <li><a href="${ctx}/item/findBySql" target = "right"><span class="icon-caret-right"></span>商品管理</a></li>
-            <li><a href="${ctx}/itemOrder/findBySql" target = "right"><span class="icon-caret-right"></span>订单管理</a></li>
-            <li><a href="${ctx}/news/findBySql" target = "right"><span class="icon-caret-right"></span>公告管理</a></li>
-            <li><a href="${ctx}/message/findBySql" target = "right"><span class="icon-caret-right"></span>留言管理</a></li>
+        <h2><span class="icon-user"></span>基本设置 </h2>
+        <ul style="display: block">
+            <li><a href="${ctx}/itemCategory/findBySql" target="right"><span class="icon-caret-right"></span>类目管理</a> </li>
+            <li><a href="${ctx}/user/findBySql" target="right"><span class="icon-caret-right"></span>用户管理</a> </li>
+            <li><a href="${ctx}/item/findBySql" target="right"><span class="icon-caret-right"></span>商品管理</a> </li>
+            <li><a href="${ctx}/itemOrder/findBySql" target="right"><span class="icon-caret-right"></span>订单管理</a> </li>
+            <li><a href="${ctx}/news/findBySql" target="right"><span class="icon-caret-right"></span>公告管理</a> </li>
+            <li><a href="${ctx}/message/findBySql" target="right"><span class="icon-caret-right"></span>留言管理</a> </li>
         </ul>
     </div>
-
     <ul class="bread">
         <li><a href="{:}" target="right" class="icon-home">首页</a> </li>
         <li><a href="#">网站信息</a> </li>
@@ -47,9 +43,8 @@
             &nbsp;&nbsp;&nbsp;&nbsp;切换语言：<a href="#">中文</a>&nbsp;&nbsp;<a href="#">英文</a>
         </li>
     </ul>
-
     <div class="admin">
-        <iframe scrolling="auto" rameborder="0" src="${ctx}/itemCategory/tj" name="right" width="100%" height="100%"></iframe>
+       <iframe src="${ctx}/resource/images/权游 (248).jpg" name="right" width="100%" height="100%" frameborder="0" scrolling="auto"></iframe>
     </div>
-  </body>
+</body>
 </html>

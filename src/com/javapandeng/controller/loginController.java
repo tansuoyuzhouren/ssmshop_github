@@ -55,7 +55,7 @@ public class loginController extends BaseController {
     public String toLogin(Manage manage, HttpServletRequest request){
         Manage byEntity = manageService.getByEntity(manage);
 
-        if (byEntity == null){
+        if (isEmpty(byEntity)){
             return "redirect:/login/mtuichu";
         }
 
