@@ -15,7 +15,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Arrays;
 
 @Controller
 @RequestMapping("/sc")
@@ -57,8 +56,7 @@ public class ScController extends BaseController {
             sc.setUser(user);
             sc.setItem(item);
 
-
-            return "redirect:sc/findBySql?item_id="+item.getId();
+            return "redirect:/sc/findBySql?item_id="+item.getId();
         }
     }
 
@@ -72,7 +70,6 @@ public class ScController extends BaseController {
         String sql = "select * from sc where user_id = "+ user_id;
         Pager<Sc> pagers = scService.findBySqlReturnEntity(sql);
 
-        System.out.println(Arrays.toString(pagers.getDatas().toArray()));
         model.addAttribute("pagers",pagers);
         return "sc/my";
     }

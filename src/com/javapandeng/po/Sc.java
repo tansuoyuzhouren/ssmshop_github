@@ -23,12 +23,10 @@ public class Sc implements Serializable {
     public Sc() {
     }
 
-    public Sc(Integer id, Integer item_id, Item item, Integer user_id, User user) {
+    public Sc(Integer id, Integer item_id, Integer user_id) {
         this.id = id;
         this.item_id = item_id;
-        this.item = item;
         this.user_id = user_id;
-        this.user = user;
     }
 
     public Integer getId() {
@@ -47,20 +45,16 @@ public class Sc implements Serializable {
         this.item_id = item_id;
     }
 
+    public Integer getUser_id() {
+        return user_id;
+    }
+
     public Item getItem() {
         return item;
     }
 
     public void setItem(Item item) {
         this.item = item;
-    }
-
-    public Integer getUser_id() {
-        return user_id;
-    }
-
-    public void setUser_id(Integer user_id) {
-        this.user_id = user_id;
     }
 
     public User getUser() {
@@ -71,14 +65,16 @@ public class Sc implements Serializable {
         this.user = user;
     }
 
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
+    }
+
     @Override
     public String toString() {
         return "Sc{" +
                 "id=" + id +
                 ", item_id=" + item_id +
-                ", item=" + item +
                 ", user_id=" + user_id +
-                ", user=" + user +
                 '}';
     }
 }

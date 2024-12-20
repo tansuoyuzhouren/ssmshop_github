@@ -9,11 +9,11 @@
         <result property="item_id" column="item_id" jdbcType="INTEGER"/>
         <result property="user_id" column="user_id" jdbcType="INTEGER"/>
     </resultMap>
-    <resultMap id="ResultMapScDao" type="com.javapandeng.po.Sc">
+    <resultMap id="ResultMapScDto" type="com.javapandeng.po.Sc">
         <result property="id" column="id" jdbcType="INTEGER"/>
         <result property="item_id" column="item_id" jdbcType="INTEGER"/>
         <result property="user_id" column="user_id" jdbcType="INTEGER"/>
-        <association property="item" column="item_id" select="com.javapandeng.mapper.ScMapper.load"/>
+        <association property="item" column="item_id" select="com.javapandeng.mapper.ItemMapper.load"/>
         <association property="user" column="user_id" select="com.javapandeng.mapper.UserMapper.load"/>
     </resultMap>
 
@@ -208,7 +208,7 @@
     </select>
 
     <!--查询分页-->
-    <select id="findBySqlReturnEntity" resultMap="ResultMapSc">
+    <select id="findBySqlReturnEntity" resultMap="ResultMapScDto">
         ${sql}
     </select>
 

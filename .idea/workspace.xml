@@ -7,9 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="184eebdf-2f65-43db-8eb7-dbb0b85f5095" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/ItemOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/ItemOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/ItemOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/mapper/ItemOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/mapper/ItemOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/ScController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/ScController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/mapper/ScMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/mapper/ScMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/po/Sc.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/po/Sc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/ScController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/ScController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/mapper/ScMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/mapper/ScMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/po/Sc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/po/Sc.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
