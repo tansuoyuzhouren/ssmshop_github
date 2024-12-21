@@ -7,9 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="184eebdf-2f65-43db-8eb7-dbb0b85f5095" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_5_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/javapandeng/filter/RedisFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestRedis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_6_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login/mIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login/mIndex.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/loginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/javapandeng/controller/loginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring/applicationContext-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring/applicationContext-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/javapandeng/controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javapandeng/controller/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spring/applicationContext-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/applicationContext-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test1.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,13 +101,14 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebRoot/resource/images" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ssmshop_github-master/ssmshop_github-master" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15802889" />
     <property name="project.structure.side.proportion" value="0.306962" />
     <property name="settings.editor.selected.configurable" value="com.poratu.idea.plugins.tomcat.setting.TomcatSettingConfigurable" />
@@ -104,11 +116,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\KuangShen\suiguostore\ssmshop_github\WebRoot\resource\images" />
       <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\src\com\javapandeng\mapper" />
       <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\WebRoot\WEB-INF\jsp\user" />
       <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\WebRoot\WEB-INF\jsp\itemCategory" />
       <recent name="D:\Project\KuangShen\suiguostore\ssmshop-first\WebRoot\WEB-INF\jsp\login" />
-      <recent name="D:\Project\KuangShen\suiguostore\shuiguo\WebRoot\resource\ueditor\jsp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.javapandeng.controller" />
@@ -242,14 +254,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRedis" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRedis.getRedisTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRedis" />
+      <option name="METHOD_NAME" value="getRedisTemplate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ssmshop-first" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="adminPort" value="8005" />
       <option name="allowRunningInParallel" value="false" />
       <option name="contextPath" value="/" />
       <option name="docBase" value="D:\Project\KuangShen\suiguostore\ssmshop_github\WebRoot" />
-      <option name="envOptions">
-        <map />
-      </option>
+      <option name="envOptions" />
       <option name="moduleName" />
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />
@@ -270,9 +299,13 @@
       <item itemvalue="JUnit.ItemCategoryServiceImpl" />
       <item itemvalue="JUnit.ItemCategoryServiceImpl.test" />
       <item itemvalue="Smart Tomcat.ssmshop-first" />
+      <item itemvalue="JUnit.TestRedis.getRedisTemplate" />
+      <item itemvalue="JUnit.TestRedis" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRedis.getRedisTemplate" />
+        <item itemvalue="JUnit.TestRedis" />
         <item itemvalue="JUnit.ItemCategoryServiceImpl.test" />
       </list>
     </recent_temporary>

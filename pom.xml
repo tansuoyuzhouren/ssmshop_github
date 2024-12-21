@@ -310,6 +310,7 @@
 <!--            <scope>test</scope>-->
 <!--        </dependency>-->
 
+
         <dependency>
             <groupId>com.gitee.qdbp.thirdparty</groupId>
             <artifactId>ueditor</artifactId>
@@ -321,6 +322,21 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+
+        <!-- Spring Data Redis -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>1.5.2.RELEASE</version> <!-- 兼容 Spring 4.1.4 -->
+        </dependency>
+
+        <!-- Jedis (Redis 客户端) -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.6.2</version> <!-- 推荐与 spring-data-redis 版本兼容 -->
+        </dependency>
+
 
     </dependencies>
     <build>

@@ -44,7 +44,7 @@ public class UserController extends BaseController {
         Object attribute = request.getSession().getAttribute(Consts.USERID);
 
         if (isEmpty(attribute)){
-            return "redirect:login/res";
+            return "redirect:/login/res";
         }
 
         Integer user_id = Integer.valueOf(attribute.toString());
@@ -52,9 +52,7 @@ public class UserController extends BaseController {
 
         model.addAttribute("obj",user);
         return "user/view";
-
     }
-
 
     /**
      * 新增修改功能

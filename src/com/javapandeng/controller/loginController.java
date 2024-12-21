@@ -9,15 +9,19 @@ import com.javapandeng.service.ManageService;
 import com.javapandeng.service.UserService;
 import com.javapandeng.utils.Consts;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -38,28 +42,64 @@ public class loginController extends BaseController {
 
     @Autowired
     UserService userService;
+
+    @Autowired
+    RedisTemplate redisTemplate;
     /**
      * 管理员登陆前
      */
     @RequestMapping("login")
-    public String login(){
+    public String login(HttpServletRequest request,HttpServletResponse response){
 
-        //返回给视图解析器
+        //验证是否以登录
+        String sessionId = (String) redisTemplate.opsForValue().get("sessionId");
+
+        /**
+         * 验证是否以登录
+         */
+        if (isEmpty(request.getCookies())){
+            //返回给视图解析器
+            return "login/mLogin";
+        }
+        if (!isEmpty(request.getCookies())) {
+            for (Cookie cookie : request.getCookies()) {
+                if (cookie.getName().equals("sessionId")){
+                    if (cookie.getValue().equals(sessionId)) {
+                        return "login/mIndex";
+                    }
+                }
+            }
+        }
+
         return "login/mLogin";
     }
 
     /**
-     * 登录验证
+     * 管理员登录验证
      */
     @RequestMapping("toLogin")
-    public String toLogin(Manage manage, HttpServletRequest request){
-        Manage byEntity = manageService.getByEntity(manage);
+    public String toLogin(Manage manage, HttpServletRequest request, HttpServletResponse response){
 
+        //通过数据库去验证，用户密码是否正确
+        Manage byEntity = manageService.getByEntity(manage);
         if (isEmpty(byEntity)){
             return "redirect:/login/mtuichu";
         }
 
-        request.getSession().setAttribute(Consts.MANAGE,byEntity);
+        //request.getSession().setAttribute(Consts.MANAGE,byEntity);
+        /**
+         * 将会话存储到 Redis，设置过期时间为半个月
+         */
+
+        String sessionId = request.getSession().getId();
+        System.out.println(sessionId);
+        redisTemplate.opsForValue().set("sessionId",sessionId,15, TimeUnit.DAYS);
+        Cookie cookie = new Cookie("sessionId", sessionId);
+
+        // 设置cookie 保存时间
+        cookie.setMaxAge(15 * 24 * 60 * 60);
+        response.addCookie(cookie);
+
         //返回给视图解析器
         return "login/mIndex";
     }
@@ -81,7 +121,7 @@ public class loginController extends BaseController {
 
         String sql1 = "select * from item_category where isDelete = 0 and pid is null order by name";
         List<ItemCategory> itemCategories = itemCategoryService.listBySqlReturnEntity(sql1);
-        System.out.println(itemCategories);
+
         List<CategoryDto> list = new ArrayList<>();
         if (!CollectionUtils.isEmpty(itemCategories)){
             for (int i = 0; i < itemCategories.size(); i++) {
@@ -96,7 +136,6 @@ public class loginController extends BaseController {
             }
         }
         model.addAttribute("lbs",list);
-
 
         /**
          * 折扣商品
