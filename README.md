@@ -2,7 +2,7 @@
 [b站链接](https://www.bilibili.com/video/BV1EC4y1a7yH?spm_id_from=333.788.videopod.episodes&vd_source=d6415f4da5d7eac6c554629e8f9909ba)
 
 *我这里有tomcat、sql(数据库名称 shop)文件*
-[百度云盘](https://pan.baidu.com/s/1YdKtqcVKO79OZeFHIndEMA?pwd=1314 提取码: 1314)
+[百度云盘](https://pan.baidu.com/s/1YdKtqcVKO79OZeFHIndEMA?pwd=1314)
 
 *不会的可以加微信了解 备注:ssmshop*
 
